@@ -1,0 +1,178 @@
+:root{
+  /* color */
+  --logo-color :#f24160;
+  --white-color :#FFFFFF;
+  --solid-color1 :#e5e5e5;
+  /* size */
+  --padding : 40px;
+  --size : 30px;
+  --font1 : 14px;
+  --picture-width : 277px;
+  --picture-height: 263px;
+}
+footer{
+  position: sticky;
+  color: var(--font1);
+
+}
+body{
+  padding: 0 var(--padding);
+  margin: 0px;
+}
+button,button:focus{
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+}
+a{
+  text-align: center;
+  text-decoration: none; /* 링크의 밑줄 제거 */
+  color: inherit; /* 링크의 색상 제거 */
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.head .logo{
+  color: var(--logo-color);
+  font-size: var(--size);
+}
+.head .search{
+  display: flex;
+  height: 48px;
+  align-items: center;
+  border: solid var(--solid-color1);
+  border-radius: 30px;
+  
+  padding: 0 12px;
+}
+.head .search .where__btn{
+  font-size: var(--font1);
+  border-right: solid var(--solid-color1);
+  padding: 0 12px;
+  
+}
+.head .search .when__btn{
+  font-size: var(--font1);
+  border-right: solid var(--solid-color1);
+  padding: 0 12px;
+}
+.head .search .person__btn{
+  font-size: var(--font1);
+  color: #959595;
+  padding: 0 12px;
+}
+.head .search .search__btn {
+  width: 25px;
+  height: 25px;
+  border-radius:50px;
+  background-color: var(--logo-color);
+  color: #FFFFFF;
+}
+.head .User a{
+  width: 110px;
+  height: 100px;
+  padding: 14px;
+}
+.head .User a:hover{
+  background-color: var(--solid-color1);
+  border-radius: 10%;
+}
+.head .User .lang{
+  
+  width:50px;
+  height: 50px;
+}
+.head .User .lang i{
+  font-size: 15px;
+}
+.head .User .lang:hover{
+  background-color: var(--solid-color1);
+  border-radius: 50%;
+}
+.head .User .user__in{
+  font-size: 20px;
+  ;
+  border: solid 2px var(--solid-color1);
+  border-radius: 50px;
+}
+.head .User .user__in i{
+  padding: 5px;
+}
+
+.recommendation .rec__btns{
+  display: flex;
+}
+.recommendation .rec__btns button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:  13px;
+}
+.recommendation .rec__btns button i{
+  font-size: 25px;
+  padding-bottom: 12px;
+}
+.recommendation .rec__btns button span{
+  font-size: 12px;
+}
+.recommendation .rec__btns div{
+  width: 35px;
+  height: 78px;
+}
+
+.recommendation .rec__btns  .pass_btn i{
+  font-size: 20px;
+  padding: 0px;
+  border: solid 2px var(--solid-color1);
+  border-radius: 100%;
+  text-align: center;
+}
+.place{
+  display:flex;
+}
+.place a{
+  display: flex;
+  flex-direction: column;
+  padding-right: 24px;
+  align-items: flex-start;
+}
+.place a img{
+  width: var(--picture-width);
+  height: var(--picture-height);
+}
+.place a .title{
+  font-weight: bold;
+}
+.map{
+  width: 150px;
+  height: 45px;
+  bottom: 140px;
+  left: 550px;
+  background-color: black;
+  font-size: 15px;
+  position: sticky;
+  border-radius: 50px;
+}
+.map span{
+  color: #FFFFFF;
+}
+footer .extra{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  border-top: solid 2px var(--solid-color1);
+  font-size: 14px;
+}
+footer .extra .extra2{
+  font-size: 14px;
+  font-weight: bold;
+}
+footer .ref{
+  font-size: 8px;
+  border-top: solid 1px var(--solid-color1);
+  padding-bottom: 8px;
+}
